@@ -1,4 +1,4 @@
-
+const calcDisplay = document.querySelector(".calc-display");
 
 function add(firstNumber, secondNumber) {
 	return firstNumber + secondNumber;
@@ -45,6 +45,16 @@ function operate(operator, firstNumber, secondNumber) {
         return newNumber;
     }
 }
+userInputArray = []
+let buttonValue = 0;
+function getValue() {
+    buttonValue = this.value;
+    userInputArray.push(buttonValue);
+    console.log(userInputArray);
+    //if (buttonValue)
+    //calcDisplay.textContent = buttonValue;
+}
+
 
 // Creating buttons for the calculator pad
 const buttonList = ["7", "8", "9", "x",
@@ -56,7 +66,9 @@ const buttonList = ["7", "8", "9", "x",
 const calcPad = document.querySelector(".calc-pad");
 for (let x = 0; x < 20; x++) {
     const calcButton = document.createElement(`button`);
-    calcButton.classList.add(`button-${x}`);
+    calcButton.id = x;
+    calcButton.value = buttonList[x];
+    calcButton.onclick = getValue(this);
     calcButton.style.height = "50px";
     calcButton.style.width = "60px";
     calcButton.style.margin = "2.5px";
@@ -74,10 +86,19 @@ for (let x = 0; x < 20; x++) {
 }
 
 // JS styling for the number display
-const calcDisplay = document.querySelector(".calc-display");
+
 calcDisplay.style.display = "flex";
 calcDisplay.style.justifyContent = "flex-end";
 calcDisplay.style.alignItems = "center";
-calcDisplay.textContent = "12345678";
 calcDisplay.style.fontSize = "35px";
 calcDisplay.style.paddingRight = "10px";
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(button => {
+    button.addEventListener("click", getValue, false);
+    calcDisplay.textContent = buttonValue;
+});
+
+
+
