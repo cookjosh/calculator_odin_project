@@ -1,5 +1,5 @@
 # calculator_odin_project
-Repo for Calculator project at end of JS fundamentals.
+Repo for Calculator project at end of JS fundamentals. [See it live!](https://cookjosh.github.io/calculator_odin_project/).
 
 Info for project can be [found here](https://www.theodinproject.com/lessons/foundations-calculator).
 
