@@ -126,8 +126,6 @@ for (let x = 0; x < 20; x++) {
     calcPad.appendChild(calcButton);
 }
 
-// JS styling for the number display
-
 
 
 const buttons = document.querySelectorAll('button');
