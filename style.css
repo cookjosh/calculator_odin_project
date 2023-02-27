@@ -1,8 +1,14 @@
+@font-face {
+    font-family: 'digital-7';
+    src: url('../fonts/digital-7.ttf');
+}
+
 .title-header {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px;
+    font-family: "Orbitron";
 }
 
 .calc-body {
@@ -11,7 +17,7 @@
     border-style: solid;
     border-color: black;
     border-width: 1px;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     background-color: rgb(0, 0, 0, 0.75);
@@ -25,6 +31,7 @@
     border-style: solid;
     border-color: black;
     border-width: 1px;
+    border-radius: 10px;
     margin-bottom: 5px;
 }
 
@@ -37,7 +44,7 @@
     border-width: 3px;
     border-radius: 5px;
     background-color: rgb(0, 255, 0, 0.55);
-
+    font-family: "Orbitron";
 }
 
 .calc-pad {

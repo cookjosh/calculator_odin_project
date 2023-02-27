@@ -4,6 +4,7 @@ calcDisplay.style.justifyContent = "flex-end";
 calcDisplay.style.alignItems = "center";
 calcDisplay.style.fontSize = "35px";
 calcDisplay.style.paddingRight = "10px";
+calcDisplay.style.fontFamily = "Orbitron";
 
 function add(firstNumber, secondNumber) {
 	return firstNumber + secondNumber;
@@ -119,6 +120,7 @@ for (let x = 0; x < 20; x++) {
     calcButton.style.alignItems = "center";
     calcButton.textContent = `${buttonList[x]}`;
     calcButton.style.fontSize = "20px";
+    calcButton.style.fontFamily = "Orbitron";
     calcButton.style.color = "rgb(0, 255, 0)";
     calcButton.style.justifyContent = "center";
     calcPad.appendChild(calcButton);
