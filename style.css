@@ -1,3 +1,10 @@
+.title-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
 .calc-body {
     width: 300px;
     height: 400px;
@@ -7,6 +14,7 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.75);
 }
 
 .calc-top {
@@ -17,7 +25,6 @@
     border-style: solid;
     border-color: black;
     border-width: 1px;
-    background-color: white;
     margin-bottom: 5px;
 }
 
@@ -26,10 +33,11 @@
     height: 75px;
     display: flex;
     border-style: solid;
-    border-color: black;
-    border-width: 1px;
+    border-color: rgb(0, 255, 0);
+    border-width: 3px;
     border-radius: 5px;
-    background-color: white;
+    background-color: rgb(0, 255, 0, 0.55);
+
 }
 
 .calc-pad {
@@ -41,3 +49,9 @@
     flex-direction: row;
 }
 
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
